@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <h1>Angular modul megoldása</h1>
+    
+    <label class="mt-2">HTML modul pontszáma:</label>
+    <input class="form-control" type="number" [(ngModel)]="htmlModul" id="htmlModul" required="htmlModul">
+    <label class="mt-2">Bootstrap modul pontszáma:</label>
+    <input class="form-control"type="number" [(ngModel)]="bootstrapModul" id="bootstrapModul" required="bootstrapModul">
+    <label class="mt-2">JavaScript modul pontszáma:</label>
+    <input class="form-control"type="number" [(ngModel)]="javascriptModul" id="javascriptModul" required="javascriptModul">
+    <label class="mt-2">TypeScript modul pontszáma:</label>
+    <input class="form-control"type="number" [(ngModel)]="typescriptModul" id="typescriptModul" required="typescriptModul">
+    <label class="mt-2">Angular modul pontszáma:</label>
+    <input class="form-control"type="number" [(ngModel)]="angularModul" id="angularModul" required="angularModul">
+    <label class="mt-2">Szerver modul pontszáma:</label>
+    <input class="form-control"type="number" [(ngModel)]="szerverModul" id="szerverModul" required="szerverModul">
+    <div class="mt-3">
+        <h4>Eredmények:</h4>
+        <p>{{eredmeny}} {{calculateSum()}}</p>
+        <p class="text-danger">{{hiba}}</p>
+    </div>
+    <button (click)=" EredmenyMentes()" class="btn btn-success w-100 mt-2">Eredmény mentése</button>
+    
+    
+</div>
